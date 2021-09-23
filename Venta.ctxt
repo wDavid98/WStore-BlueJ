@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Venta
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Venta\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=id\ fech\ produts
+comment1.target=Venta(int,\ java.util.Date,\ java.util.HashMap)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Venta\r\n
+comment10.params=
+comment10.target=void\ imprimir()
+comment2.params=cln
+comment2.target=void\ setCliente(Cliente)
+comment3.params=
+comment3.target=int\ getID()
+comment4.params=
+comment4.target=java.util.Date\ getFecha()
+comment5.params=
+comment5.target=int\ getTotal()
+comment6.params=prod\ cnt
+comment6.target=void\ a\u00F1adirProducto(Producto,\ int)
+comment7.params=
+comment7.target=java.lang.String\ getClienteNombre()
+comment8.params=
+comment8.target=java.lang.String\ getClienteID()
+comment9.params=
+comment9.target=void\ calcularTotal()
+numComments=11

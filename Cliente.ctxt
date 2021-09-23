@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Cliente
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Cliente\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=id\ nom\ tel\ dir
+comment1.target=Cliente(int,\ java.lang.String,\ int,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Cliente\r\n
+comment2.params=
+comment2.target=int\ getCC()
+comment3.params=
+comment3.target=int\ getTelefono()
+comment4.params=
+comment4.target=java.lang.String\ getNombre()
+comment5.params=
+comment5.target=java.lang.String\ getDireccion()
+comment6.params=id
+comment6.target=void\ setCC(int)
+comment7.params=tel
+comment7.target=void\ setTelefono(int)
+comment8.params=nom
+comment8.target=void\ setNombre(java.lang.String)
+comment9.params=dir
+comment9.target=void\ setDireccion(java.lang.String)
+numComments=10
