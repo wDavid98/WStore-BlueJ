@@ -49,8 +49,6 @@ public class Historial
         Compra compra = new Compra(idCpr,date,cprs);
         return compra;
     }
-    
-    
     public void agregarCompra(Compra compra)
     {
         compras.add(compra);    

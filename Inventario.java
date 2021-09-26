@@ -89,6 +89,7 @@ public class Inventario
         Producto prod = new Producto(nombre,Pcom,Pvent); 
         int olStk = buscarProducto(id).getStock();
         int nStk = olStk + stkps;
+        prod.setID(id);
         prod.setStock(nStk);
         return prod;
     }

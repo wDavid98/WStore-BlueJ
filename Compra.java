@@ -20,12 +20,13 @@ public class Compra
     /** 
      * Constructor for objects of class Compra
      */
-    public Compra(int id,Date fech,HashMap<Producto,Integer> productos)
+    public Compra(int id,Date fech,HashMap<Producto,Integer> produts)
     {   
         // initialise instance variable
         ID = id;    
         fecha = fech;
-        calcularTotal(productos);
+        productos = produts;
+        calcularTotal();
     }   
     
     public void setProveedor(Proveedor prov)
@@ -76,9 +77,9 @@ public class Compra
         return a;
     }   
     
-    private void calcularTotal(HashMap<Producto,Integer> prd)    
+    private void calcularTotal()    
     {
-        for(Map.Entry<Producto,Integer> data : prd.entrySet())
+        for(Map.Entry<Producto,Integer> data : productos.entrySet())
         {
             total += data.getKey().getPrecio_Compra()*data.getValue();
         }
@@ -96,10 +97,11 @@ public class Compra
         System.out.println("Fecha Compra: "+getFecha());
         System.out.println("Proveedor: "+getProveedorNombre()+" -- "+getProveedorID());
         System.out.println("Productos: ");
-        System.out.println(" ID -   Nombre  -   Cantidad ");
+        System.out.println(" ID -   Nombre  -   Cantidad  - Total");
         for(Map.Entry<Producto,Integer> data : productos.entrySet())
-        {
-            System.out.println(data.getKey().getID()+"  -  "+data.getKey().getNombre()+" - "+data.getValue());
+        {   
+            int tot = data.getKey().getPrecio_Compra()*data.getValue();
+            System.out.println(data.getKey().getID()+"  -  "+data.getKey().getNombre()+" - "+data.getValue()+"  -  "+tot);
         }
         System.out.println("---------------------------");
     }
